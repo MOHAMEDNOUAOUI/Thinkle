@@ -1,0 +1,48 @@
+{
+  "layout": [
+    {
+        "title": "All Notes",
+        "icon": "pi-clipboard"
+    },
+    {
+        "title": "Pinned Notes",
+        "icon": "pi-check-square"
+    },
+    {
+        "title": "Tasks",
+        "icon": "pi-link"
+    },
+    {
+        "title": "Notebooks",
+        "icon": "pi-tags"
+    },
+    {
+        "title": "Tags",
+        "icon": "pi-file"
+    }
+    ,
+    {
+        "title": "Trash",
+        "icon": "pi-trash"
+    },
+    {
+        "title": "Settings",
+        "icon": "pi-cog"
+    }
+    ,
+    {
+        "title": "Help",
+        "icon": "pi-question-circle"
+    }
+    ,
+    {
+        "title": "About",
+        "icon": "pi-info-circle"
+    }
+    ,
+    {
+        "title": "Logout",
+        "icon": "pi-sign-out"
+    }
+  ]
+}

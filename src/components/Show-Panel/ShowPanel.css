@@ -1,0 +1,6 @@
+.show-panel {
+  height: 100%;
+  width: var(--show-panel-width);
+  transition: var(--panel-transition);
+  background-color: var(--show-panel-bg);
+}
