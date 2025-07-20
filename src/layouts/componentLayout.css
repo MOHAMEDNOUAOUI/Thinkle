@@ -1,0 +1,14 @@
+.component-layout  {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+.component-layout__content {
+  height: 100%;
+  width: var(--layout-width);
+  background-color: var(--layout-bg-color);
+  transition: var(--layout-transition);
+  display: flex;
+  flex-direction: column;
+}
+    

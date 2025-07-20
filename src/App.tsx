@@ -4,9 +4,9 @@ import ComponentLayout from './layouts/componentLayout'
 function App() {
 
   return (
-    <>
+    <div className="App">
       <ComponentLayout />
-    </>
+    </div>
   )
 }
 
