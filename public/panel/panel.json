@@ -1,0 +1,74 @@
+{
+  "panel": [
+    {
+        "title": "All Notes",
+        "icon": "pi-clipboard",
+        "isActive":true,
+        "lengthItem":10,
+        "path":"/notes"
+    },
+    {
+        "title": "Pinned Notes",
+        "icon": "pi-check-square",
+        "isActive":false,
+        "lengthItem":3,
+        "path":"/pinned"
+    },
+    {
+        "title": "Tasks",
+        "icon": "pi-link",
+        "isActive":false,
+        "lengthItem":5,
+        "path":"/tasks"
+    },
+    {
+        "title": "Notebooks",
+        "icon": "pi-tags",
+        "childs":[
+
+        ],
+        "isActive":false,
+        "path":"/notebooks"
+    },
+    {
+        "title": "Tags",
+        "icon": "pi-file",
+        "childs":[
+
+        ],
+        "isActive":false,
+        "path":"/tags"
+    }
+    ,
+    {
+        "title": "Trash",
+        "icon": "pi-trash",
+        "isActive":false,
+        "path":"/trash"
+    },
+    {
+        "title": "Settings",
+        "icon": "pi-cog",
+        "childs":[
+
+        ],
+        "isActive":false,
+        "path":"/settings"
+    }
+    ,
+    {
+        "title": "Help",
+        "icon": "pi-question-circle",
+        "isActive":false,
+        "path":"/help"
+    }
+    ,
+    {
+        "title": "About",
+        "icon": "pi-info-circle",
+        "isActive":false,
+        "path":"/about"
+    }
+
+  ]
+}

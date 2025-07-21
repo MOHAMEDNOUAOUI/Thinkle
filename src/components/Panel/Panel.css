@@ -14,13 +14,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-}
-
-.pi-cog {
-  color: var(--icon-color-dark);
-  font-size: 1.2rem;
-  font-weight: normal;
+  padding: 0.5rem;
 }
 
 
@@ -29,6 +23,7 @@
   height: 100%;
   overflow-y: auto;
 }
+
 .panel-content::-webkit-scrollbar {
   width: 8px;
 }
@@ -43,3 +38,56 @@
   width: 100%;
   height: 10%;
 }
+
+
+
+/* this is the panel items that u can see */
+.panel-item-holder{
+  display: flex;
+  flex-direction: column;
+}
+.panel-item{
+  width: 100%;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 300ms ease-in-out;
+  cursor: pointer;
+}
+
+.panel-item:hover .length-holder {
+  color: white;
+  transform: scale(1.05);
+}
+
+.panel-item.active{
+  background-color: rgba(0, 0, 0, 0.582);
+}
+.panel-item-left{
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+  color: var(--icon-color-dark);
+}
+
+.panel-icon{
+  transition: all 300ms ease-in-out;
+  color: var(--icon-light-color);
+  font-size: 1.1rem;
+}
+
+.length-holder{
+  color: var(--icon-light-color);
+  font-size: 0.8rem;
+  /* font-family: var(--bitcount-single); */
+  transition: 300ms ease-in-out;
+}
+.panel-title{
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 200;
+}
+
+
+/* ------------------- */

@@ -1,16 +1,19 @@
-import React from 'react'
 import Panel from '../components/Panel/Panel'
 import './componentLayout.css'
 import ShowPanel from '../components/Show-Panel/ShowPanel'
+import { useRoutes } from 'react-router-dom'
+import { appRoutes } from '../routes'
 
 function ComponentLayout() {
+  const routesElements = useRoutes(appRoutes)
+
+
   return (
     <div className='component-layout'>
         <Panel />
-        <ShowPanel />
+        <ShowPanel/>
         <div className='component-layout__content glass'>
-            <h1>Component Layout</h1>
-            <p>This is a layout for displaying components.</p>  
+           {routesElements}
         </div>
     </div>
   )

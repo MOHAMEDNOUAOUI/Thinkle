@@ -1,19 +1,18 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './Panel.css'
+import type { PanelItems, PanelResponse } from '../../interfaces/panel';
+import PanelHeader from './panelHeader';
+import PanelBody from './panelBody';
+import PanelFooter from './panelFooter';
 
 function Panel() {
+
+
   return (
     <div className='panel glass'>
-      <div className='panel-header'>
-        <div></div>
-        <i className='pi pi-cog'></i>
-      </div>
-      <div className='panel-content'>
-        <p>This is the content of the panel.</p>
-      </div>
-      <div className='panel-footer'>
-        <button className='btn'>Action</button>
-      </div>
+      <PanelHeader />
+      <PanelBody />
+      <PanelFooter />
     </div>
   )
 }

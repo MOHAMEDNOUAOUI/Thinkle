@@ -1,6 +1,22 @@
 .show-panel {
   height: 100%;
-  width: var(--show-panel-width);
   transition: var(--panel-transition);
   background-color: var(--show-panel-bg);
+}
+
+.active-panel{
+  width: var(--show-panel-width);
+}
+.disabled-panel{
+  width: 0;
+}
+
+.show-panel_toprow{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.3rem;
+}
+.show-panel_toprow .icon-hover{
+  font-size: 1rem;
 }
