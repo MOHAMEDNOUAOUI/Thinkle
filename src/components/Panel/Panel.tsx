@@ -10,7 +10,7 @@ function Panel() {
 
   return (
     <div className='panel glass'>
-      <PanelHeader />
+      {/*<PanelHeader />*/ }
       <PanelBody />
       <PanelFooter />
     </div>

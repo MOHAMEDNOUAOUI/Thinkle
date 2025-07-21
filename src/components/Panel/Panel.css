@@ -3,7 +3,7 @@
   width: var(--panel-width);
   transition: 400ms width ease-in-out;
   display: flex;
-  background-color: var(--layout-bg-color);
+  background-color: var(--panel-bg);
   flex-direction: column;
 }
 .panel.collapsed {
@@ -74,7 +74,7 @@
 .panel-icon{
   transition: all 300ms ease-in-out;
   color: var(--icon-light-color);
-  font-size: 1.1rem;
+  font-size: 0.8rem;
 }
 
 .length-holder{
@@ -85,7 +85,7 @@
 }
 .panel-title{
   color: white;
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   font-weight: 200;
 }
 

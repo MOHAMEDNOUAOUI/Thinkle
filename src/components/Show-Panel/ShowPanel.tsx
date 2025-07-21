@@ -12,7 +12,7 @@ function ShowPanel() {
   const location = useLocation()
 
   useEffect(() => {
-      const isActive = location.pathname != '/'
+      const isActive = location.pathname != '/' && location.pathname != '/help' && location.pathname != '/about' && location.pathname != '/settings'
       dispatch(setShowPanel(isActive))
   } , [location.pathname , dispatch])
 
