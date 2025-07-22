@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import './Panel.css'
+import './Panel.scss'
 import type { PanelItems, PanelResponse } from '../../interfaces/panel';
 import PanelHeader from './panelHeader';
 import PanelBody from './panelBody';
@@ -10,7 +10,7 @@ function Panel() {
 
   return (
     <div className='panel glass'>
-      {/*<PanelHeader />*/ }
+      {/* <PanelHeader /> */}
       <PanelBody />
       <PanelFooter />
     </div>

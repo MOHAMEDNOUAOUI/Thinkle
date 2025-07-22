@@ -1,12 +1,61 @@
-.component-layout  {
+.component-layout {
   height: 100%;
   width: 100%;
-  display: flex;
+   background: var(--loading-page);
+  /* background-color: var(--layout-bg-color); */
+  padding: 0.3rem;
 }
 .component-layout__content {
   height: 100%;
   width: var(--layout-width);
-  background-color: var(--layout-bg-color);
+  background-color: rgba(0, 0, 0, 0.479);
   transition: var(--layout-transition);
+  /* border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px; */
+  /* border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px; */
+  border-radius: 10px;
 }
     
+.component-layout_insider{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  border-radius: 10px;
+  animation: fadeIn 1s ease-in-out forwards;
+  gap: 0.5rem;
+}
+
+@keyframes fadeIn {
+  0%{
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100%{
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.circleLogo{
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  background-color: var(--first);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 100%;
+  cursor: pointer;
+  transition: 300ms ease-in;
+
+  img{
+    width: 50%;
+  }
+}
+
+.circleLogo:hover{
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}

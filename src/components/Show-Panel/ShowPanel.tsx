@@ -12,7 +12,7 @@ function ShowPanel() {
   const location = useLocation()
 
   useEffect(() => {
-      const isActive = location.pathname != '/' && location.pathname != '/help' && location.pathname != '/about' && location.pathname != '/settings'
+      const isActive = location.pathname != '/' && location.pathname != '/help' && location.pathname != '/about' && location.pathname != '/settings' && location.pathname != '/tasks'
       dispatch(setShowPanel(isActive))
   } , [location.pathname , dispatch])
 
@@ -43,8 +43,28 @@ function ShowPanel() {
   return (
     <div className={'show-panel ' + (activePanel ? 'active-panel' : 'disabled-panel')}>
         <div className="show-panel_toprow">
-          <i className='pi pi-sort-alpha-down icon-hover'></i>
+          <div className="top">
+             <i className='pi pi-sort-alpha-down icon-hover'></i>
+          <h4>All Notes</h4>
           <i className='pi pi-arrow-right-arrow-left icon-hover' onClick={changingShowPanelState}></i>
+          </div>
+          <div className="bottom">
+            <input type="text"  name="" id="bottom_search" />
+          </div>
+        </div>
+        <div className="show-pane_holder">
+          <div className="card">
+            <p>Test</p>
+          </div>
+           <div className="card">
+            <p>Test</p>
+          </div>
+           <div className="card">
+            <p>Test</p>
+          </div>
+           <div className="card">
+            <p>Test</p>
+          </div>
         </div>
     </div>
   )

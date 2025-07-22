@@ -10,7 +10,7 @@
     {
         "title": "Pinned Notes",
         "icon": "pi-check-square",
-        "isActive":false,
+        "isActive":true,
         "lengthItem":3,
         "path":"/pinned"
     },

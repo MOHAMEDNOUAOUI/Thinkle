@@ -2,7 +2,9 @@ import React from 'react'
 
 function Notes() {
   return (
-    <div>Notes</div>
+    <div className='page'>
+        <h1>Draft Monthly Report Summary</h1>
+    </div>
   )
 }
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import type { PanelItems } from '../../interfaces/panel'
-import './Panel.css'
+import './Panel.scss'
 import { NavLink } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 import type { RootState } from '../../store'
@@ -18,9 +18,9 @@ function PanelItem({item , length  , path}:Props) {
 
   const toggleShowPanelUI = () => {
     console.log(ShowPanelState);
-    if(!ShowPanelState){
-      dispatch(setShowPanel(true))
-    }
+   if(item.isActive){
+    dispatch(setShowPanel(true))
+   }
   }
 
 
@@ -37,7 +37,9 @@ function PanelItem({item , length  , path}:Props) {
           {item.icon && <i className={'panel-icon pi ' + item.icon}></i>}
           <span className="panel-title">{item.title}</span>
         </div>
-        <p className="length-holder">{length}</p>
+        {item.lengthItem && (<div className="length-holder">
+          <p className='length-holder-paragraph'>{length}</p>
+        </div>)}
       </NavLink>
     </li>
   );

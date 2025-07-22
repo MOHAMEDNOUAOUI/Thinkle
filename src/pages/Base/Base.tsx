@@ -3,7 +3,9 @@ import './base.css'
 
 function Base() {
   return (
-    <div>Base</div>
+    <section className='page base-page'>
+        <h1>Welcome</h1>
+    </section>
   )
 }
 
