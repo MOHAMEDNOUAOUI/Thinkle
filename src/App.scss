@@ -119,6 +119,7 @@ div {
   .page-title {
     display: flex;
     align-items: baseline;
+    flex-direction: column;
     .page-title-header {
       font-size: 3rem;
       font-family: var(--inter);
@@ -127,7 +128,7 @@ div {
       font-size: 0.8rem;
       font-family: var(--inter);
       color: var(--forth);
-      font-weight: 100;
+      font-weight: 200;
       margin-left: 1rem;
     }
   }

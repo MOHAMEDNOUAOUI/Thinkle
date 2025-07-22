@@ -5,9 +5,10 @@ import { setFilterPanel, type TaskFilter } from '../../../../store/slices/taskFi
 type props= {
   isActive?:boolean
   label:TaskFilter
+  icon:string
 }
 
-function DesignSwitchItem({isActive , label} : props) {
+function DesignSwitchItem({isActive , label ,icon} : props) {
   const dispatch = useDispatch();
 
 
@@ -20,7 +21,8 @@ function DesignSwitchItem({isActive , label} : props) {
 
   return (
     <div onClick={changeActiveTab} className={'design-switch-item ' + (isActive ? 'active' : '')}>
-      {label}
+      <i className={'pi ' + icon}></i>
+      <span>{label}</span>
     </div>
   )
 }

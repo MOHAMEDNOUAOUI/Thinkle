@@ -4,6 +4,7 @@ import { TaskFilterItems } from '../../../../store/slices/taskFilter'
 import { useSelector } from 'react-redux'
 import type { RootState } from '../../../../store'
 
+const icons = ["pi-th-large", "pi-list", "pi-calendar", "pi-tag"]
 function DesignSwitch() {
   const activePanel = useSelector((state : RootState) => state.tasksFilter.activepanel);
   const taskFilters = TaskFilterItems
@@ -17,6 +18,7 @@ function DesignSwitch() {
           key={filter}
           label={filter}
           isActive={filter == activePanel}
+          icon={icons[Object.values(taskFilters).indexOf(filter)]}
         />
          ))
         }
