@@ -7,7 +7,7 @@
   --primary: rgb(255, 153, 0);
   --second-primary: rgb(65, 29, 0);
   --secondary: #3f3f3f;
-  --panel-bg: rgb(0, 0, 0);
+  --panel-bg: rgba(0, 0, 0, 0.466);
   --panel-width: 15%;
   --panel-transition: 400ms width ease-in-out;
 
@@ -43,6 +43,7 @@
   --second: #3c3d37;
   --third: #697565;
   --forth: #ecdfcc;
+  --border-card: #ecdfcc10;
   --loading-page: linear-gradient(var(--second), var(--first));
 }
 
