@@ -5,7 +5,7 @@ type LoaderState = {
 };
 
 const initialState: LoaderState = {
-  loading: true,
+  loading: false,
 };
 
 const AppLoaderSlice = createSlice({

@@ -1,15 +1,19 @@
-import React from 'react'
 import './BoardSection.scss'
 import BoardItem from '../Board-Item/BoardItem'
-import { color } from 'framer-motion';
+import { useSelector } from 'react-redux';
+import type { RootState } from '../../../../../../store';
+import type { Status } from '../../../../../../interfaces/task';
+import { selectFilteredTasks } from '../../../../../../store/selectors/TasksSelector';
 
 
 type props = {
-    label: string;
-    data?:any;
+    label: Status;
+    // data?:Task[];
     color?: string;
 }
-function BoardSection({label , data , color}: props) {
+function BoardSection({label , color}: props) {
+    const Tasks = useSelector((state: RootState) => selectFilteredTasks(state, label));
+
   return (
     <div className='board-section'>
         <div className="board-section-topsection">
@@ -25,8 +29,16 @@ function BoardSection({label , data , color}: props) {
             </div>
         </div>
         <div className="board-section-holder">
-                <BoardItem />
-                <BoardItem />
+            {
+                Tasks && Tasks.length > 0 ? (
+                    Tasks.map((item , index) => (
+                        <BoardItem task={item} key={index}/>                
+                    ))
+                ) : (
+                    <p>{Tasks.length}</p>
+                )
+            }
+                
         </div>
     </div>
   )
